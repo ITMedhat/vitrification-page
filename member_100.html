@@ -17,21 +17,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 20px;
             background: #1e1e1e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         .header img {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
         }
         .header h1 {
-            font-size: 24px;
+            font-size: 36px;
             margin: 0;
             text-align: center;
         }
         .content {
-            max-width: 700px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 30px auto;
             padding: 20px;
             background: #1e1e1e;
             border-radius: 10px;
@@ -39,35 +40,38 @@
         }
         .profile-pic {
             display: block;
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             margin: 0 auto 20px auto;
-            border: 3px solid #007BFF;
+            border: 5px solid #007BFF;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
         }
-        .content div {
+        .section {
+            margin-bottom: 25px;
             opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s forwards;
         }
-        .content div:nth-child(2) { animation-delay: 0.2s; }
-        .content div:nth-child(3) { animation-delay: 0.4s; }
-        .content div:nth-child(4) { animation-delay: 0.6s; }
-        .content div:nth-child(5) { animation-delay: 0.8s; }
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #007BFF;
+            display: inline-block;
+        }
+        .section div {
+            line-height: 2;
+            font-size: 20px;
         }
         footer {
             text-align: center;
             margin-top: 20px;
-            padding: 10px;
+            padding: 15px;
             background: #1e1e1e;
             color: #8f8f8f;
-            font-size: 14px;
+            font-size: 16px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -78,15 +82,54 @@
     </header>
     <div class="content">
         <img src="member_100.jpg" alt="صورة العضو" class="profile-pic">
-        <div><strong>الرقم القومي:</strong> 30812131400313</div>
-        <div><strong>كود الطالب:</strong> 472767317</div>
-        <div><strong>الرتبة:</strong> قائد الفريق</div>
-        <div><strong>ID N.:</strong> 100</div>
+        
+        <div class="section" id="section1">
+            <h2>المعلومات الشخصية</h2>
+            <div><strong>الرقم القومي:</strong> 30812131400313</div>
+            <div><strong>كود الطالب:</strong> 472767317</div>
+            <div><strong>الرتبة:</strong> قائد الفريق</div>
+            <div><strong>ID N.:</strong> 100</div>
+        </div>
+        
+        <div class="section" id="section2">
+            <h2>الهدف</h2>
+            <div>
+                أنا هدفي أكون شخص ناجح في شغلي وأقدر أطور الفريق وأحقق إنجازات كبيرة في البرمجة وإدارة المشاريع.
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <h2>المهارات</h2>
+            <div>- شاطر في البرمجة بلغات Python وJavaScript</div>
+            <div>- بعرف أشتغل على تصميم واجهات المستخدم (UI/UX)</div>
+            <div>- بعرف أنظم وقتي وأحل المشاكل</div>
+            <div>- عندي خبرة في قيادة الفرق وتحقيق الأهداف</div>
+        </div>
+
+        <div class="section" id="section4">
+            <h2>التواصل مع الفريق</h2>
+            <div><strong>البريد الإلكتروني:</strong> <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></div>
+            <div><strong>رقم الهاتف:</strong> 01066480958</div>
+        </div>
     </div>
     <footer>
-        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
-        <p>رقم الهاتف: 01066480958</p>
-        <p>© حقوق الفريق محفوظة</p>
+        <p>© كل الحقوق محفوظة للفربق التقني - 2024</p>
     </footer>
+
+    <script>
+        // دالة لإظهار الأقسام بالتتابع
+        function showSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                    section.style.transition = 'opacity 1s ease-in-out';
+                }, index * 1500); // كل قسم يظهر بعد 1.5 ثانية من اللي قبله
+            });
+        }
+
+        // استدعاء الدالة عند تحميل الصفحة
+        window.onload = showSections;
+    </script>
 </body>
 </html>

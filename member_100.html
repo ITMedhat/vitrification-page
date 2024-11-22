@@ -3,87 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حسين يحيي حسين أحمد - الصفحة الشخصية</title>
+    <title>حسين يحيي حسين احمد - الصفحة الشخصية</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
             direction: rtl;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
-        .member-info {
-            font-size: 18px;
-            color: #333;
-            margin: 20px 0;
-        }
-        .member-info strong {
-            color: #007BFF;
-        }
-        .back-link {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 18px;
-        }
-        .back-link a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .back-link a:hover {
-            text-decoration: underline;
+            background: #121212;
+            color: #e0e0e0;
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #1e1e1e;
         }
-        .logo {
-            max-width: 150px;
+        .header img {
+            width: 80px;
+            height: 80px;
         }
-        .member-photo {
-            display: block;
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            text-align: center;
+        }
+        .content {
+            max-width: 700px;
             margin: 20px auto;
-            max-width: 200px;
-            border-radius: 8px;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .profile-pic {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 3px solid #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .content div {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+        }
+        .content div:nth-child(2) { animation-delay: 0.2s; }
+        .content div:nth-child(3) { animation-delay: 0.4s; }
+        .content div:nth-child(4) { animation-delay: 0.6s; }
+        .content div:nth-child(5) { animation-delay: 0.8s; }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #1e1e1e;
+            color: #8f8f8f;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- رأس الصفحة يحتوي على اللوجو والنص -->
-        <div class="header">
-            <h1>حسين يحيي حسين أحمد</h1>
-            <img src="logo.png" alt="Logo" class="logo">
-        </div>
-
-        <!-- صورة العضو -->
-        <img src="member_100.jpg" alt="حسين يحيي حسين أحمد" class="member-photo">
-
-        <div class="member-info">
-            <h2>معلومات العضو</h2>
-            <p><strong>الأسم:</strong> حسين يحيي حسين أحمد</p>
-            <p><strong>الرقم القومي:</strong> 30812131400313</p>
-            <p><strong>كود الطالب:</strong> 472767317</p>
-            <p><strong>الرتبة:</strong> قائد الفريق</p>
-            <p><strong>ID N.:</strong> 100</p>
-        </div>
-
-        <div class="back-link">
-            <a href="index.html">الرجوع إلى الصفحة الرئيسية</a>
-        </div>
+    <header class="header">
+        <h1>حسين يحيي حسين احمد</h1>
+        <img src="logo.png" alt="لوجو الفريق">
+    </header>
+    <div class="content">
+        <img src="member_100.jpg" alt="صورة العضو" class="profile-pic">
+        <div><strong>الرقم القومي:</strong> 30812131400313</div>
+        <div><strong>كود الطالب:</strong> 472767317</div>
+        <div><strong>الرتبة:</strong> قائد الفريق</div>
+        <div><strong>ID N.:</strong> 100</div>
     </div>
+    <footer>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>رقم الهاتف: 01066480958</p>
+        <p>© حقوق الفريق محفوظة</p>
+    </footer>
 </body>
 </html>

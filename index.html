@@ -3,113 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الصفحة الرئيسية</title>
+    <title>الفريق التقني - الصفحة الرئيسية</title>
     <style>
-        /* الأساسيات */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             direction: rtl;
             background-color: #f4f4f4;
         }
-
         .container {
-            max-width: 600px;
+            max-width: 900px;
             margin: auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        /* تنسيق النموذج */
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-
-        /* الأزرار */
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        /* عرض النموذج */
-        .login-form, .add-member-form {
-            margin-top: 30px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            display: none;
-        }
-
-        h1 {
+        h1, h2 {
             text-align: center;
             color: #333;
         }
-
-        h2 {
+        p {
+            font-size: 18px;
             color: #333;
-            margin-bottom: 15px;
+        }
+        .members-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .members-list li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .members-list a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .members-list a:hover {
+            text-decoration: underline;
+        }
+        .announcement {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        /* تنسيق العنوان واللوجو معًا */
+        .header {
+            display: flex;
+            justify-content: space-between; /* وضع العناصر على أطراف الصفحة */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-left: 20px; /* لضبط المسافة بين العنوان وأطراف الصفحة */
+            font-size: 30px;
+        }
+        .logo {
+            max-width: 150px; /* الحد الأقصى لحجم اللوجو */
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>الصفحة الرئيسية</h1>
-
-        <!-- نموذج كلمة المرور (الذي سيظهر عند دخول الصفحة) -->
-        <div id="loginForm" class="login-form">
-            <h2>إدخال كلمة المرور</h2>
-            <form id="passwordForm">
-                <label for="password">كلمة المرور:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">إدخال</button>
-            </form>
+        <!-- رأس الصفحة يحتوي على اللوجو والنص -->
+        <div class="header">
+            <h1>الفريق التقني</h1>
+            <img src="images/logo.png" alt="Logo" class="logo"> 
         </div>
 
-        <!-- نموذج إضافة العضو الجديد (سيظهر بعد التحقق من كلمة المرور) -->
-        <div id="addMemberForm" class="add-member-form">
-            <h2>إضافة عضو جديد</h2>
-            <form id="memberForm">
-                <label for="name">الاسم:</label>
-                <input type="text" id="name" name="name" required>
+        <p>نحن فريق من المبرمجين والمطورين المدربين، ونعمل على تطوير المنصات الرقمية وتحسين العمليات التقنية داخل المؤسسة. هدفنا هو تسهيل العمليات التقنية وتقديم حلول مبتكرة.</p>
 
-                <label for="nationalID">الرقم القومي:</label>
-                <input type="text" id="nationalID" name="nationalID" required>
-
-                <label for="studentCode">كود الطالب:</label>
-                <input type="text" id="studentCode" name="studentCode" required>
-
-                <label for="rank">الرتبة:</label>
-                <input type="text" id="rank" name="rank" required>
-
-                <label for="idNum">ID N.:</label>
-                <input type="number" id="idNum" name="idNum" required>
-
-                <label for="photo">الصورة:</label>
-                <input type="file" id="photo" name="photo" accept="image/*" required>
-
-                <button type="submit">إضافة العضو</button>
-            </form>
+        <div class="announcement">
+            <h2>أحدث الأخبار:</h2>
+            <p>نحن نعمل حالياً على تطوير مجموعة من الأدوات الجديدة لتحسين تجربة المستخدم في المنصة. ترقبوا التحديثات القادمة!</p>
         </div>
+
+        <h2>أعضاء الفريق</h2>
+        <p>إليك قائمة بأعضاء الفريق التقني وروابط لصفحاتهم الشخصية:</p>
+        <ul class="members-list">
+            <li><a href="member_100.html">حسين يحيي حسين احمد</a></li>
+            <li><a href="member_169.html">مهند تامر مفرح عبدالفتاح</a></li>
+            <li><a href="member_196.html">أحمد فايز حسان عبد الحميد</a></li>
+            <li><a href="member_824.html">يوسف محمد حازم صياد</a></li>
+            <li><a href="member_307.html">يوسف هيثم يوسف احمد يوسف</a></li>
+            <li><a href="member_197.html">أحمد محمد عبد العليم شفيق</a></li>
+            <li><a href="member_569.html">مالك احمد محمد حسن الجمل</a></li>
+            <li><a href="member_505.html">إياد محمود فاروق محمود</a></li>
+            <li><a href="member_496.html">محمد علاء محمد عبد العزيز</a></li>
+            <li><a href="member_823.html">إياد مصطفي عبد الحميد عبد العزيز</a></li>
+            <li><a href="member_571.html">أحمد سامر عبد ربه</a></li>
+            <li><a href="member_151.html">مروان امجد احمد محمد فتحي</a></li>
+            <li><a href="member_159.html">يوسف هاني أسامة عبدالرحمن الأشقر</a></li>
+            <li><a href="member_321.html">محمد نور الدين عادل عبد الحافظ احمد</a></li>
+            <li><a href="member_962.html">احمد عبدالرؤف سمير عبدالرؤف</a></li>
+            <li><a href="member_157.html">ايثار محمد عبدالله محمد</a></li>
+            <li><a href="member_896.html">جنى محمد عبدالرازق حسن سرحان</a></li>
+            <li><a href="member_746.html">زينه احمد عبدالفتاح محمد عبدالرحمن</a></li>
+            <li><a href="member_535.html">فاطمة الزهراء احمد عبد الفتاح محمد</a></li>
+        </ul>
     </div>
-
-    <script src="index.js"></script>
 </body>
 </html>

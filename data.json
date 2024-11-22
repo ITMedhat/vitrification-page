@@ -1,0 +1,42 @@
+[
+    {
+        "name": "حسين يحيي حسين احمد",
+        "nationalID": "30812131400313",
+        "studentCode": "472767317",
+        "rank": "قائد الفريق",
+        "idNum": "100",
+        "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/..."
+    },
+    {
+        "name": "مهند تامر مفرح عبدالفتاح",
+        "nationalID": "30901251400417",
+        "studentCode": "464828068",
+        "rank": "مبرمج رئيسي ، مسؤول الأرشيف",
+        "idNum": "169",
+        "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/..."
+    },
+    {
+        "name": "أحمد فايز حسان عبد الحميد",
+        "nationalID": "30812301400739",
+        "studentCode": "461592885",
+        "rank": "محلل بيانات مكتبية",
+        "idNum": "196",
+        "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/..."
+    },
+    {
+        "name": "يوسف محمد حازم صياد",
+        "nationalID": "30810081400411",
+        "studentCode": "483321636",
+        "rank": "مبرمج",
+        "idNum": "824",
+        "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/..."
+    },
+    {
+        "name": "يوسف هيثم يوسف احمد يوسف",
+        "nationalID": "30811241400517",
+        "studentCode": "460971377",
+        "rank": "محلل بيانات مكتبية",
+        "idNum": "307",
+        "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/..."
+    }
+]

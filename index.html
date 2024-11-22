@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <style>
+        /* الأساسيات */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            direction: rtl;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* تنسيق النموذج */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        /* الأزرار */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* عرض النموذج */
+        .login-form, .add-member-form {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>الصفحة الرئيسية</h1>
+
+        <!-- نموذج كلمة المرور (الذي سيظهر عند دخول الصفحة) -->
+        <div id="loginForm" class="login-form">
+            <h2>إدخال كلمة المرور</h2>
+            <form id="passwordForm">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">إدخال</button>
+            </form>
+        </div>
+
+        <!-- نموذج إضافة العضو الجديد (سيظهر بعد التحقق من كلمة المرور) -->
+        <div id="addMemberForm" class="add-member-form">
+            <h2>إضافة عضو جديد</h2>
+            <form id="memberForm">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="nationalID">الرقم القومي:</label>
+                <input type="text" id="nationalID" name="nationalID" required>
+
+                <label for="studentCode">كود الطالب:</label>
+                <input type="text" id="studentCode" name="studentCode" required>
+
+                <label for="rank">الرتبة:</label>
+                <input type="text" id="rank" name="rank" required>
+
+                <label for="idNum">ID N.:</label>
+                <input type="number" id="idNum" name="idNum" required>
+
+                <label for="photo">الصورة:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <button type="submit">إضافة العضو</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

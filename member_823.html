@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إياد مصطفى عبد الحميد عبد العزيز - الصفحة الشخصية</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background: #121212;
+            color: #e0e0e0;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #1e1e1e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .header img {
+            width: 150px;
+            height: 100px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+            text-align: center;
+        }
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .profile-pic {
+            display: block;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 5px solid #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+            border-color: #00BFFF;
+        }
+        .section {
+            margin-bottom: 25px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #007BFF;
+            display: inline-block;
+            transition: border-color 0.3s ease;
+        }
+        .section h2:hover {
+            border-color: #00BFFF;
+        }
+        .section div {
+            line-height: 2;
+            font-size: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #1e1e1e;
+            color: #8f8f8f;
+            font-size: 16px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #00BFFF;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>إياد مصطفى عبد الحميد عبد العزيز</h1>
+        <img src="logo.png" alt="لوجو الفريق">
+    </header>
+    <div class="content">
+        <img src="member_823.jpg" alt="صورة العضو" class="profile-pic">
+        
+        <div class="section" id="section1">
+            <h2>المعلومات الشخصية</h2>
+            <div><strong>الرقم القومي:</strong> 30811291401816</div>
+            <div><strong>كود الطالب:</strong> 460971401</div>
+            <div><strong>الرتبة:</strong> قائد فريق</div>
+            <div><strong>التخصص:</strong> محلل بيانات مكتبية</div>
+            <div><strong>الفريق:</strong> فريق Technical Support</div>
+            <div><strong>ID N.:</strong> 823</div>
+        </div>
+        
+        <div class="section" id="section2">
+            <h2>الهدف</h2>
+            <div>
+                هدفي أن أكون جزءًا من فريق دعم فني محترف، أساهم في حل المشكلات التقنية وأساعد الفريق في التعامل مع التحديات التقنية بشكل أسرع وأكفأ.
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div><strong>تواصل مع الفريق:</strong> <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a> | 01066480958</div>
+        <p>© كل الحقوق محفوظة للفريق التقني - 2024</p>
+    </footer>
+
+    <script>
+        // دالة لإظهار الأقسام بالتتابع
+        function showSections() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                }, index * 1500); // كل قسم يظهر بعد 1.5 ثانية من اللي قبله
+            });
+        }
+
+        // استدعاء الدالة عند تحميل الصفحة
+        window.onload = function() {
+            showSections();
+            document.querySelector('.content').style.opacity = 1;
+        };
+    </script>
+</body>
+</html>

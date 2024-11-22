@@ -3,105 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الفريق التقني - الصفحة الرئيسية</title>
+    <title>الصفحة الرئيسية - الفريق التقني</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            direction: rtl;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #333;
-        }
-        .members-list {
-            list-style-type: none;
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
             padding: 0;
+            direction: rtl;
+            background: #121212;
+            color: #e0e0e0;
         }
-        .members-list li {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .members-list a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .members-list a:hover {
-            text-decoration: underline;
-        }
-        .announcement {
-            background-color: #e9ecef;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        /* تنسيق العنوان واللوجو معًا */
         .header {
             display: flex;
-            justify-content: space-between; /* وضع العناصر على أطراف الصفحة */
+            justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: #1e1e1e;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
         }
         .header h1 {
-            margin-left: 20px; /* لضبط المسافة بين العنوان وأطراف الصفحة */
-            font-size: 30px;
+            font-size: 32px;
+            margin: 0;
+            text-align: center;
         }
-        .logo {
-            max-width: 150px; /* الحد الأقصى لحجم اللوجو */
+        .main-content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .main-content h2 {
+            color: #00BFFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .projects, .workshops {
+            margin-bottom: 30px;
+        }
+        .projects h3, .workshops h3 {
+            color: #00BFFF;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #1e1e1e;
+            color: #8f8f8f;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- رأس الصفحة يحتوي على اللوجو والنص -->
-        <div class="header">
-            <h1>الفريق التقني</h1>
-            <img src="logo.png" alt="Logo" class="logo"> 
+    <header class="header">
+        <h1>الفريق التقني</h1>
+        <img src="logo.png" alt="لوجو الفريق">
+    </header>
+    <div class="main-content">
+        <h2>عن الفريق</h2>
+        <p>
+            الفريق التقني بتاعنا هو فريق مكون من مجموعة من المبدعين في مجالات التكنولوجيا والبرمجة والتحليل، وهدفنا 
+            الأساسي هو تقديم حلول تقنية مبتكرة تساهم في تحسين العملية التعليمية في المدرسة.
+        </p>
+        <p>
+            شغالين على مشاريع كتير زي:
+        </p>
+
+        <div class="projects">
+            <h3>المشاريع الحالية</h3>
+            <ul>
+                <li><strong>نظام إدارة الحضور والغياب:</strong> مشروع بنحاول من خلاله نعمل نظام دقيق وسهل لإدارة حضور وغياب الطلاب، بحيث يسهل متابعة أداء الطلاب بشكل مستمر.</li>
+                <li><strong>منصة التعليم الإلكتروني:</strong> منصة هتسمح للطلاب والمعلمين بالتواصل ومشاركة المحتوى الدراسي بطريقة سريعة وآمنة.</li>
+                <li><strong>أدوات لتحليل البيانات:</strong> بنطور أدوات تحليل بيانات متقدمة عشان نساعد المعلمين والإداريين في اتخاذ قرارات مبنية على البيانات.</li>
+            </ul>
         </div>
 
-        <p>نحن فريق من المبرمجين والمطورين المدربين، ونعمل على تطوير المنصات الرقمية وتحسين العمليات التقنية داخل المؤسسة. هدفنا هو تسهيل العمليات التقنية وتقديم حلول مبتكرة.</p>
+        <p>وكمان بنقدم ورش عمل تدريبية للطلاب في مجالات متنوعة عشان نرفع مهاراتهم في التكنولوجيا.</p>
 
-        <div class="announcement">
-            <h2>أحدث الأخبار:</h2>
-            <p>نحن نعمل حالياً على تطوير مجموعة من الأدوات الجديدة لتحسين تجربة المستخدم في المنصة. ترقبوا التحديثات القادمة!</p>
+        <div class="workshops">
+            <h3>ورش العمل الحالية</h3>
+            <ul>
+                <li><strong>ورشة "مقدمة في البرمجة":</strong> الورشة دي هتبدأ يوم السبت 1 ديسمبر، وهنشرح فيها أساسيات البرمجة وتطوير البرمجيات بلغة Python.</li>
+                <li><strong>ورشة "تحليل البيانات باستخدام Excel":</strong> ورشة تفاعلية عن استخدام Excel لتحليل البيانات، هتكون يوم الاثنين 4 ديسمبر من الساعة 10 صباحاً.</li>
+                <li><strong>ورشة "التصميم الجرافيكي باستخدام Photoshop":</strong> ورشة هنتعلم فيها أساسيات التصميم الجرافيكي وكيفية استخدام Photoshop في التصميم، هتبدأ يوم الثلاثاء 10 ديسمبر.</li>
+            </ul>
         </div>
 
-        <h2>أعضاء الفريق</h2>
-        <p>إليك قائمة بأعضاء الفريق التقني وروابط لصفحاتهم الشخصية:</p>
-        <ul class="members-list">
-            <li><a href="member_100.html">حسين يحيي حسين احمد</a></li>
-            <li><a href="member_169.html">مهند تامر مفرح عبدالفتاح</a></li>
-            <li><a href="member_196.html">أحمد فايز حسان عبد الحميد</a></li>
-            <li><a href="member_824.html">يوسف محمد حازم صياد</a></li>
-            <li><a href="member_307.html">يوسف هيثم يوسف احمد يوسف</a></li>
-            <li><a href="member_197.html">أحمد محمد عبد العليم شفيق</a></li>
-            <li><a href="member_569.html">مالك احمد محمد حسن الجمل</a></li>
-            <li><a href="member_505.html">إياد محمود فاروق محمود</a></li>
-            <li><a href="member_496.html">محمد علاء محمد عبد العزيز</a></li>
-            <li><a href="member_823.html">إياد مصطفي عبد الحميد عبد العزيز</a></li>
-            <li><a href="member_571.html">أحمد سامر عبد ربه</a></li>
-            <li><a href="member_151.html">مروان امجد احمد محمد فتحي</a></li>
-            <li><a href="member_159.html">يوسف هاني أسامة عبدالرحمن الأشقر</a></li>
-            <li><a href="member_321.html">محمد نور الدين عادل عبد الحافظ احمد</a></li>
-            <li><a href="member_962.html">احمد عبدالرؤف سمير عبدالرؤف</a></li>
-            <li><a href="member_157.html">ايثار محمد عبدالله محمد</a></li>
-            <li><a href="member_896.html">جنى محمد عبدالرازق حسن سرحان</a></li>
-            <li><a href="member_746.html">زينه احمد عبدالفتاح محمد عبدالرحمن</a></li>
-            <li><a href="member_535.html">فاطمة الزهراء احمد عبد الفتاح محمد</a></li>
-        </ul>
+        <p>بنشتغل على تطوير المشاريع دي عشان نساعد في تحسين بيئة التعليم المدرسي باستخدام التكنولوجيا.</p>
     </div>
+    <footer>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>رقم الهاتف: 01066480958</p>
+        <p>© حقوق الفريق محفوظة</p>
+    </footer>
 </body>
 </html>

@@ -3,177 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أعضاء الفريق التقني</title>
+    <title>أعضاء الفريق - الفريق التقني</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            background-color: #121212;
-            color: white;
+            font-family: 'Tajawal', sans-serif;
             margin: 0;
             padding: 0;
+            direction: rtl;
+            background: #121212;
+            color: #e0e0e0;
         }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #0077b6;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #1e1e1e;
         }
-        h1 {
+        .header img {
+            width: 80px;
+            height: 80px;
+        }
+        .header h1 {
+            font-size: 28px;
             margin: 0;
-            color: white;
+            text-align: center;
         }
-        .team-container {
-            margin: 20px;
+        .main-content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
-        .team-section {
+        .team {
             margin-bottom: 40px;
         }
-        .team-section h2 {
-            color: #0077b6;
-            border-bottom: 2px solid #0077b6;
-            padding-bottom: 5px;
+        .team h2 {
+            color: #00BFFF;
+            margin-bottom: 15px;
+        }
+        .team p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.8;
         }
         .member {
-            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
         .member img {
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
-            vertical-align: middle;
-            margin-left: 10px;
+            margin-left: 15px;
         }
-        .highlight {
-            background-color: #0077b6;
-            color: white;
+        .member a {
+            color: #00BFFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .member a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
             padding: 10px;
-            border-radius: 10px;
+            background: #1e1e1e;
+            color: #8f8f8f;
+            font-size: 14px;
+        }
+        footer a {
+            color: #00BFFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>الفريق التقني</h1>
+    <header class="header">
+        <h1>أعضاء الفريق</h1>
+        <img src="logo.png" alt="لوجو الفريق">
     </header>
-    <div class="team-container">
-        <!-- القائد العام -->
-        <div class="team-section highlight">
-            <h2>القائد العام: حسين يحيي</h2>
-            <p>حسين هو القائد العام للفريق والمسؤول عن التنسيق بين كل الفرق المختلفة. دوره يشمل إدارة المهام، اتخاذ القرارات المهمة، والتأكد إن الشغل كله ماشي زي ما المفروض.</p>
-            <p>رقم ID: 100</p>
-            <img src="member_100.jpg" alt="حسين يحيي" style="width: 120px; height: 120px; border-radius: 50%;">
-        </div>
+    <div class="main-content">
 
-        <!-- فريق Front-End -->
-        <div class="team-section">
-            <h2>فريق Front-End</h2>
-            <p>الفريق ده مسؤوليته تصميم شكل الموقع الخارجي، يعني كل حاجة بيشوفها المستخدم زي الألوان، التنسيق، والأزرار. شغلهم بيكون دايمًا متعلق بالواجهة اللي بتتعامل مع الناس.</p>
+        <!-- فريق البرمجة -->
+        <div class="team">
+            <h2>فريق البرمجة</h2>
+            <p>
+                فريق البرمجة هو المسؤول عن تطوير التطبيقات والمواقع. شغالين على كتابة الأكواد وحل المشاكل التقنية.
+            </p>
             <div class="member">
-                <img src="member_169.jpg" alt="مهند تامر">
-                <a href="member_169.html">مهند تامر (قائد الفريق)</a>
+                <img src="ahmed.jpg" alt="أحمد سامر">
+                <a href="ahmed-samer.html">أحمد سامر عبد ربه</a>
             </div>
             <div class="member">
-                <img src="member_824.jpg" alt="يوسف صياد">
-                <a href="member_824.html">يوسف صياد</a>
-            </div>
-            <div class="member">
-                <img src="member_505.jpg" alt="إياد محمود">
-                <a href="member_505.html">إياد محمود</a>
+                <img src="marwan.jpg" alt="مروان أمجد">
+                <a href="marwan-amgad.html">مروان أمجد أحمد محمد</a>
             </div>
         </div>
 
-        <!-- فريق Back-End -->
-        <div class="team-section">
-            <h2>فريق Back-End</h2>
-            <p>الفريق ده مسؤول عن الجزء اللي ورا الكواليس زي قواعد البيانات، الخوادم، والمنطق اللي بيشغل الموقع. هم اللي بيخلوا الموقع يشتغل صح من الناحية التقنية.</p>
+        <!-- فريق التصميم -->
+        <div class="team">
+            <h2>فريق التصميم</h2>
+            <p>
+                فريق التصميم بيهتم بجانب الشكل والتجربة البصرية. بيوفر تصميمات جرافيك وواجهة مستخدم للبرامج.
+            </p>
             <div class="member">
-                <img src="member_100.jpg" alt="حسين يحيي">
-                <a href="member_100.html">حسين يحيي (قائد الفريق)</a>
+                <img src="yousef-h.jpg" alt="يوسف هيثم">
+                <a href="yousef-haitham.html">يوسف هيثم يوسف أحمد</a>
             </div>
             <div class="member">
-                <img src="member_496.jpg" alt="محمد علاء">
-                <a href="member_496.html">محمد علاء</a>
-            </div>
-        </div>
-
-        <!-- فريق SQL -->
-        <div class="team-section">
-            <h2>فريق SQL</h2>
-            <p>الفريق ده متخصص في التعامل مع قواعد البيانات، تنظيمها، وإدارة البيانات بشكل منظم وسريع.</p>
-            <div class="member">
-                <img src="member_197.jpg" alt="أحمد عبد العليم">
-                <a href="member_197.html">أحمد عبد العليم</a>
+                <img src="jana.jpg" alt="جنى محمد">
+                <a href="jana-mohamed.html">جنى محمد عبد الرازق</a>
             </div>
         </div>
 
-        <!-- فريق Office -->
-        <div class="team-section">
-            <h2>فريق Office</h2>
-            <p>الفريق ده بيتعامل مع البيانات المكتبية، التحليل، وإدارة الملفات المهمة. هم العمود الفقري لكتير من الأنشطة الداخلية.</p>
+        <!-- فريق تحليل البيانات -->
+        <div class="team">
+            <h2>فريق تحليل البيانات</h2>
+            <p>
+                فريق تحليل البيانات بيحلل البيانات، يطلع الإحصائيات ويقدم حلول عشان نطور العملية التعليمية.
+            </p>
             <div class="member">
-                <img src="member_151.jpg" alt="مروان أمجد">
-                <a href="member_151.html">مروان أمجد</a>
+                <img src="eyad.jpg" alt="إياد محمود">
+                <a href="eyad-mahmoud.html">إياد محمود فاروق</a>
             </div>
             <div class="member">
-                <img src="member_307.jpg" alt="يوسف هيثم">
-                <a href="member_307.html">يوسف هيثم</a>
-            </div>
-            <div class="member">
-                <img src="member_151.jpg" alt="إياد عبدالرؤف">
-                <a href="member_151.html">إياد عبدالرؤف</a>
-            </div>
-            <div class="member">
-                <img src="member_196.jpg" alt="أحمد فايز">
-                <a href="member_196.html">أحمد فايز</a>
-            </div>
-            <div class="member">
-                <img src="member_569.jpg" alt="مالك أحمد">
-                <a href="member_569.html">مالك أحمد</a>
+                <img src="ahmed-fayez.jpg" alt="أحمد فايز">
+                <a href="ahmed-fayez.html">أحمد فايز حسان</a>
             </div>
         </div>
-<!-- فريق Content -->
-<div class="team-section">
-    <h2>فريق Content</h2>
-    <p>الفريق ده متخصص في كتابة المحتوى وإدارته سواء للموقع أو لأي مواد ترويجية. دورهم أساسي في إيصال الرسالة المطلوبة للجمهور.</p>
-    <div class="member">
-        <img src="member_169.jpg" alt="مهند تامر">
-        <a href="member_169.html">مهند تامر</a>
     </div>
-    <div class="member">
-        <img src="member_100.jpg" alt="حسين يحيي">
-        <a href="member_100.html">حسين يحيي</a>
-    </div>
-    <div class="member">
-        <img src="member_151.jpg" alt="أحمد عبد الرؤف">
-        <a href="member_151.html">أحمد عبد الرؤف</a>
-    </div>
-    <div class="member">
-        <img src="member_496.jpg" alt="محمد نور الدين">
-        <a href="member_496.html">محمد نور الدين</a>
-    </div>
-</div>
-
-<!-- فريق Trainees -->
-<div class="team-section">
-    <h2>فريق Trainees</h2>
-    <p>الفريق ده يضم المتدربين الجدد اللي بيتعلموا المهارات المختلفة لدعم الفريق في المستقبل.</p>
-    <div class="member">
-        <img src="member_151.jpg" alt="أيثار محمد">
-        <a href="member_151.html">أيثار محمد</a>
-    </div>
-    <div class="member">
-        <img src="member_151.jpg" alt="جني محمد عبدالرازق">
-        <a href="member_151.html">جني محمد عبدالرازق</a>
-    </div>
-    <div class="member">
-        <img src="member_151.jpg" alt="زينة أحمد عبد الفتاح">
-        <a href="member_151.html">زينة أحمد عبد الفتاح</a>
-    </div>
-    <div class="member">
-        <img src="member_151.jpg" alt="فاطمة الزهراء أحمد">
-        <a href="member_151.html">فاطمة الزهراء أحمد</a>
-    </div>
-</div>
-</div>
+    <footer>
+        <p>للمزيد من التفاصيل: <a href="index.html">الصفحة الرئيسية</a></p>
+        <p>البريد الإلكتروني: <a href="mailto:Itmedhattalat@gmail.com">Itmedhattalat@gmail.com</a></p>
+        <p>© حقوق الفريق محفوظة</p>
+    </footer>
 </body>
 </html>
